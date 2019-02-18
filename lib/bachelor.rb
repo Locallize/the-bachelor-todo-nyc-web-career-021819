@@ -44,19 +44,10 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  # code here
-  # data.each do |k, v|
-  #   v.each do |hhash|
-  #     if hhash[:hometown] == hometown
-  #       hhash[:name]
-  #     end
-  #   end
-  # end
-  
   
   data.each do |season, list|
     list.each do |h|
-      h.each |v|
+      h.each |k,v|
       if v == hometown
         h["occupation"]
        end
