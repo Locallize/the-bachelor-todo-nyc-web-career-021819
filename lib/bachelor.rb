@@ -49,7 +49,7 @@ def get_occupation(data, hometown)
     list.each do |h|
       h.each do |k,v|
         if v == hometown
-        h["occupation"]
+        return h["occupation"]
        end
      end
   end
