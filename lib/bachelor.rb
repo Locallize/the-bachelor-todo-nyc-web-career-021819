@@ -32,7 +32,7 @@ def count_contestants_by_hometown(data, hometown)
   counter = 0 
   data.each do |s,a|
     a.each do |hash|
-      hash.each do |k,v|
+      hash.each do |v|
         if v == hometown
           counter += 1 
         end
