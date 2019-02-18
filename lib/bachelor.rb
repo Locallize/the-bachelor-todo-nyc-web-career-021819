@@ -47,8 +47,8 @@ def get_occupation(data, hometown)
   
   data.each do |season, list|
     list.each do |h|
-      h.each |k,v|
-      if v == hometown
+      h.each do |k,v|
+        if v == hometown
         h["occupation"]
        end
      end
