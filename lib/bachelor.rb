@@ -1,6 +1,5 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  
   #look ing the data for season then look into the season 
   
   data[season].each do |v|
