@@ -32,7 +32,7 @@ def count_contestants_by_hometown(data, hometown)
   counter = 0 
   data.each do |s,a|
     a.each do |hash|
-      hash.each do |v|
+      hash.each do |k,v|
         if v == hometown
           counter += 1 
         end
@@ -56,7 +56,7 @@ def get_occupation(data, hometown)
   
   data.each do |season, list|
     list.each do |h|
-      h.each |k,v|
+      h.each |v|
       if v == hometown
         h["occupation"]
        end
