@@ -20,7 +20,7 @@ def get_contestant_name(data, occupation)
       names.each do |k,v|
         
         if v == occupation
-          return  people["name"]
+          return  names["name"]
         end
         end
       end
